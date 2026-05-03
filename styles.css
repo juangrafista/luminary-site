@@ -1,0 +1,143 @@
+* { box-sizing: border-box; margin: 0; padding: 0; }
+
+html { scroll-behavior: smooth; }
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "SF Pro Display", "SF Pro Text", "Segoe UI", system-ui, sans-serif;
+  background: linear-gradient(180deg, #1a4d8c 0%, #0f1a2e 100%);
+  background-attachment: fixed;
+  color: #fff;
+  line-height: 1.6;
+  min-height: 100vh;
+  -webkit-font-smoothing: antialiased;
+}
+
+a { color: inherit; }
+
+.container { max-width: 960px; margin: 0 auto; padding: 0 24px; }
+
+/* Hero */
+.hero { text-align: center; padding: 96px 0 48px; }
+.hero h1 {
+  font-size: clamp(56px, 9vw, 112px);
+  font-weight: 800;
+  letter-spacing: -0.03em;
+  line-height: 1;
+  margin-bottom: 20px;
+}
+.hero .tagline {
+  font-size: clamp(20px, 2.5vw, 26px);
+  opacity: 0.85;
+  font-weight: 400;
+  max-width: 640px;
+  margin: 0 auto;
+}
+.hero-image {
+  margin-top: 56px;
+  width: 100%;
+  max-width: 880px;
+  height: auto;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 14px;
+  box-shadow: 0 30px 80px rgba(0, 0, 0, 0.5);
+}
+
+/* Sections */
+.section {
+  padding: 96px 0;
+  border-top: 1px solid rgba(255, 255, 255, 0.08);
+}
+.section h2 {
+  font-size: clamp(36px, 5vw, 54px);
+  font-weight: 700;
+  letter-spacing: -0.025em;
+  margin-bottom: 14px;
+  line-height: 1.1;
+}
+.section .subtitle {
+  font-size: clamp(17px, 2vw, 20px);
+  opacity: 0.8;
+  max-width: 580px;
+  margin-bottom: 40px;
+}
+.section img {
+  width: 100%;
+  border-radius: 14px;
+  box-shadow: 0 24px 60px rgba(0, 0, 0, 0.4);
+  margin-top: 16px;
+}
+
+/* Feature grid */
+.features-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 16px;
+}
+@media (max-width: 720px) {
+  .features-grid { grid-template-columns: 1fr; }
+}
+.feature {
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 14px;
+  padding: 22px 26px;
+  transition: background 0.18s, border-color 0.18s;
+}
+.feature:hover {
+  background: rgba(255, 255, 255, 0.07);
+  border-color: rgba(255, 255, 255, 0.15);
+}
+.feature h3 { font-size: 18px; font-weight: 600; margin-bottom: 4px; }
+.feature p { font-size: 15px; opacity: 0.75; line-height: 1.5; }
+
+/* CTA */
+.cta { text-align: center; padding: 96px 0 48px; border-top: 1px solid rgba(255, 255, 255, 0.08); }
+.cta h2 { font-size: clamp(36px, 5vw, 54px); margin-bottom: 18px; letter-spacing: -0.025em; }
+.cta .price { font-size: 22px; opacity: 0.9; margin-bottom: 6px; font-weight: 500; }
+.cta .free-info { font-size: 16px; opacity: 0.65; margin-bottom: 36px; max-width: 480px; margin-left: auto; margin-right: auto; }
+
+.badge-link {
+  display: inline-block;
+  background: #007AFF;
+  color: #fff;
+  padding: 16px 32px;
+  border-radius: 14px;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 17px;
+  transition: background 0.18s, transform 0.12s;
+  box-shadow: 0 8px 24px rgba(0, 122, 255, 0.35);
+}
+.badge-link:hover { background: #0066d6; transform: translateY(-1px); }
+.badge-link.disabled {
+  background: rgba(255, 255, 255, 0.1);
+  cursor: default;
+  box-shadow: none;
+}
+.badge-link.disabled:hover { background: rgba(255, 255, 255, 0.1); transform: none; }
+
+/* Footer */
+footer {
+  text-align: center;
+  padding: 32px 0 56px;
+  opacity: 0.55;
+  font-size: 14px;
+  border-top: 1px solid rgba(255, 255, 255, 0.05);
+  margin-top: 24px;
+}
+footer a { color: rgba(255, 255, 255, 0.85); margin: 0 8px; text-decoration: none; }
+footer a:hover { text-decoration: underline; }
+
+/* Privacy/long-form pages */
+.prose { max-width: 720px; margin: 0 auto; padding: 80px 24px 64px; }
+.prose h1 { font-size: clamp(36px, 5vw, 48px); font-weight: 700; letter-spacing: -0.025em; margin-bottom: 8px; }
+.prose .meta { opacity: 0.65; margin-bottom: 40px; font-size: 14px; }
+.prose h2 { font-size: 22px; font-weight: 600; margin-top: 36px; margin-bottom: 12px; letter-spacing: -0.01em; }
+.prose p { margin-bottom: 14px; opacity: 0.92; font-size: 16px; }
+.prose ul { margin: 12px 0 16px 24px; }
+.prose li { margin-bottom: 6px; opacity: 0.92; }
+.prose a { color: #6cb4ff; text-decoration: underline; }
+.prose .home-link { display: inline-block; margin-bottom: 32px; opacity: 0.7; text-decoration: none; }
+.prose .home-link:hover { opacity: 1; }
