@@ -32,7 +32,8 @@ a { color: inherit; }
   max-width: 640px;
   margin: 0 auto;
 }
-.hero-image {
+.hero-image,
+.hero-video {
   margin-top: 56px;
   width: 100%;
   max-width: 880px;
