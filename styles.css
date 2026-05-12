@@ -108,6 +108,7 @@ a { color: inherit; }
   box-shadow: 0 24px 60px rgba(0, 0, 0, 0.4);
   margin-top: 16px;
 }
+.features-grid + img { margin-top: 48px; }
 
 /* Feature grid */
 .features-grid {
