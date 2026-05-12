@@ -231,6 +231,10 @@ footer a:hover { text-decoration: underline; }
 .press-shots a:hover img { transform: translateY(-2px); }
 @media (max-width: 560px) { .press-shots { grid-template-columns: 1fr; } }
 
+.press .press-links { font-size: 14px; opacity: 0.7; margin-top: -4px; margin-bottom: 24px; }
+.press .press-links a { color: #6cb4ff; text-decoration: none; }
+.press .press-links a:hover { text-decoration: underline; }
+
 .press .blurb {
   border-left: 3px solid rgba(108, 180, 255, 0.6);
   padding: 4px 0 4px 16px;
