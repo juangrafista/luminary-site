@@ -32,20 +32,28 @@ a { color: inherit; }
   max-width: 640px;
   margin: 0 auto;
 }
-.hero-image,
-.hero-video {
+.hero-image {
   margin: 56px auto 0;
   width: 100%;
   max-width: 880px;
   height: auto;
   display: block;
   border-radius: 18px;
-  overflow: hidden;
   box-shadow: 0 30px 80px rgba(0, 0, 0, 0.5);
 }
-.hero-video {
+.hero-video-wrap {
+  margin: 56px auto 0;
+  width: 100%;
   max-width: 560px;
-  object-fit: cover;
+  border-radius: 18px;
+  overflow: hidden;
+  box-shadow: 0 30px 80px rgba(0, 0, 0, 0.5);
+  -webkit-mask-image: -webkit-radial-gradient(white, black);
+}
+.hero-video {
+  display: block;
+  width: 100%;
+  height: auto;
 }
 
 /* Sections */
