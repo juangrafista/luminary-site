@@ -159,6 +159,32 @@ a { color: inherit; }
 }
 .badge-link.disabled:hover { background: rgba(255, 255, 255, 0.1); transform: none; }
 
+/* Mobile → Mac handoff */
+.mac-handoff { max-width: 460px; margin: 0 auto; }
+.mac-handoff .handoff-note {
+  font-size: 16px;
+  opacity: 0.8;
+  line-height: 1.55;
+  margin-bottom: 24px;
+}
+.handoff-actions {
+  display: flex;
+  gap: 12px;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.handoff-btn { border: none; cursor: pointer; font-family: inherit; }
+.handoff-btn.copied { background: #34C759; box-shadow: 0 8px 24px rgba(52, 199, 89, 0.35); }
+.handoff-link {
+  color: rgba(255, 255, 255, 0.85);
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 16px;
+  padding: 16px 8px;
+}
+.handoff-link:hover { text-decoration: underline; }
+
 /* Footer */
 footer {
   text-align: center;
